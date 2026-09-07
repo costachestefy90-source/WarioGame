@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://dy6xh77aehv22"]
+
+[ext_resource type="Texture2D" uid="uid://kaw1p35hbyoo" path="res://addons/vecteezy_vector-illustration-mountains-mysterious-landscape-of_8215950.svg" id="1_g1b8n"]
+[ext_resource type="Script" uid="uid://dybinlm8irp11" path="res://title_scene.gd" id="2_5lwqw"]
+
+[node name="Background" type="TextureRect" unique_id=1111692306]
+offset_top = 1.0
+offset_right = 6026.0933
+offset_bottom = 4001.0
+scale = Vector2(0.19161952, 0.1613587)
+texture = ExtResource("1_g1b8n")
+script = ExtResource("2_5lwqw")
+
+[node name="Title" type="RichTextLabel" parent="." unique_id=576194894]
+clip_contents = false
+layout_mode = 0
+offset_left = 1614.9941
+offset_top = 508.76715
+offset_right = 4664.9663
+offset_bottom = 1532.3584
+theme_override_constants/outline_size = 160
+theme_override_font_sizes/normal_font_size = 500
+text = "WarioWare
+"
+
+[node name="Button" type="Button" parent="." unique_id=709803710]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Button2" type="Button" parent="." unique_id=1847854843]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Button3" type="Button" parent="." unique_id=1361295665]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
