@@ -5,7 +5,7 @@ var timer_end := false
 var finished := false
 
 func _ready() -> void:
-	await timer_node.Timer(7.0)
+	await timer_node.Timer(12.0)
 	timer_end = true
 	_finish(false)
 

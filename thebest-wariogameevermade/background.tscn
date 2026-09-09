@@ -9,16 +9,3 @@ offset_bottom = 4001.0
 scale = Vector2(0.19161952, 0.1613587)
 mouse_filter = 2
 texture = ExtResource("1_oabld")
-
-[node name="Title" type="RichTextLabel" parent="." unique_id=576194894]
-clip_contents = false
-layout_mode = 0
-mouse_filter = 2
-offset_left = 1614.9941
-offset_top = 508.76715
-offset_right = 4664.9663
-offset_bottom = 1532.3584
-theme_override_constants/outline_size = 160
-theme_override_font_sizes/normal_font_size = 500
-text = "WarioWare
-"

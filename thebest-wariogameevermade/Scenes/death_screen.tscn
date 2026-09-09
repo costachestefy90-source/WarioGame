@@ -1,15 +1,36 @@
 [gd_scene format=3]
 
-[ext_resource type="PackedScene" path="res://background.tscn" id="1_background"]
+[ext_resource type="Texture2D" path="res://assets/death_screen.jpg" id="1_art"]
 [ext_resource type="Script" path="res://end_screen.gd" id="2_script"]
 
 [node name="DeathScreen" type="Node2D"]
 script = ExtResource("2_script")
 won = false
 
-[node name="Background" parent="." instance=ExtResource("1_background")]
+[node name="Background" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.04, 0.04, 0.07, 1)
+mouse_filter = 2
+
+[node name="Art" type="TextureRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+expand_mode = 1
+stretch_mode = 5
+texture = ExtResource("1_art")
+mouse_filter = 2
+
+[node name="Shade" type="ColorRect" parent="."]
+offset_left = 340.0
+offset_top = 500.0
+offset_right = 812.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 0.6)
+mouse_filter = 2
 
 [node name="Message" type="RichTextLabel" parent="."]
+visible = false
 offset_left = 300.0
 offset_top = 120.0
 offset_right = 1000.0
@@ -22,6 +43,7 @@ text = "GAME OVER"
 horizontal_alignment = 1
 
 [node name="Details" type="RichTextLabel" parent="."]
+visible = false
 offset_left = 300.0
 offset_top = 260.0
 offset_right = 1000.0
@@ -32,10 +54,10 @@ text = "The garlic got away..."
 horizontal_alignment = 1
 
 [node name="Restart" type="Button" parent="."]
-offset_left = 490.0
-offset_top = 390.0
-offset_right = 790.0
-offset_bottom = 460.0
+offset_left = 476.0
+offset_top = 544.0
+offset_right = 676.0
+offset_bottom = 610.0
 theme_override_font_sizes/font_size = 28
 text = "Try Again"
 

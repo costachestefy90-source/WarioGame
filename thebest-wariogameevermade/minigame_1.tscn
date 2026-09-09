@@ -59,11 +59,10 @@ shape = SubResource("RectangleShape2D_0hvi2")
 
 [node name="Player" parent="." unique_id=35791155 instance=ExtResource("1_gi7k6")]
 
-[node name="Garlic" type="TextureRect" parent="." unique_id=449700767]
+[node name="Garlic" type="TextureButton" parent="." unique_id=449700767]
 position = Vector2(450, 520)
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("2_0hvi2")
+size = Vector2(100, 100)
+texture_normal = ExtResource("2_0hvi2")
 script = ExtResource("3_garlic")
 
 [node name="Area2D" type="Area2D" parent="Garlic" unique_id=1523564354]
@@ -72,11 +71,10 @@ visible = false
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Garlic/Area2D" unique_id=1217348639]
 shape = SubResource("CircleShape2D_garlic")
 
-[node name="Garlic2" type="TextureRect" parent="." unique_id=1593647543]
+[node name="Garlic2" type="TextureButton" parent="." unique_id=1593647543]
 position = Vector2(700, 350)
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("2_0hvi2")
+size = Vector2(100, 100)
+texture_normal = ExtResource("2_0hvi2")
 script = ExtResource("3_garlic")
 
 [node name="Area2D" type="Area2D" parent="Garlic2" unique_id=476870919]
@@ -85,11 +83,10 @@ visible = false
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Garlic2/Area2D" unique_id=193519853]
 shape = SubResource("CircleShape2D_garlic")
 
-[node name="Garlic3" type="TextureRect" parent="." unique_id=1791487841]
+[node name="Garlic3" type="TextureButton" parent="." unique_id=1791487841]
 position = Vector2(950, 520)
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("2_0hvi2")
+size = Vector2(100, 100)
+texture_normal = ExtResource("2_0hvi2")
 script = ExtResource("3_garlic")
 
 [node name="Area2D" type="Area2D" parent="Garlic3" unique_id=1148929311]
@@ -103,3 +100,60 @@ shape = SubResource("CircleShape2D_garlic")
 [node name="Node2D" type="Node2D" parent="." unique_id=1713423181]
 
 [node name="ThemedTimer" parent="." instance=ExtResource("4_timer")]
+
+[node name="Controls" type="CanvasLayer" parent="."]
+layer = 10
+
+[node name="Panel" type="Control" parent="Controls"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Hint" type="Label" parent="Controls/Panel"]
+offset_left = 28.0
+offset_top = 96.0
+offset_right = 470.0
+offset_bottom = 132.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_font_sizes/font_size = 22
+text = "Collect all 3 garlic before time runs out!"
+mouse_filter = 2
+
+[node name="Left" type="Button" parent="Controls/Panel"]
+offset_left = 28.0
+offset_top = 526.0
+offset_right = 170.0
+offset_bottom = 612.0
+theme_override_font_sizes/font_size = 24
+text = "◀ LEFT"
+
+[node name="Right" type="Button" parent="Controls/Panel"]
+offset_left = 184.0
+offset_top = 526.0
+offset_right = 326.0
+offset_bottom = 612.0
+theme_override_font_sizes/font_size = 24
+text = "RIGHT ▶"
+
+[node name="Jump" type="Button" parent="Controls/Panel"]
+offset_left = 944.0
+offset_top = 420.0
+offset_right = 1124.0
+offset_bottom = 506.0
+theme_override_font_sizes/font_size = 24
+text = "JUMP"
+
+[connection signal="button_down" from="Controls/Panel/Left" to="." method="_on_left_button_down"]
+[connection signal="button_up" from="Controls/Panel/Left" to="." method="_on_move_button_up"]
+[connection signal="pressed" from="Controls/Panel/Left" to="." method="_on_left_pressed"]
+[connection signal="button_down" from="Controls/Panel/Right" to="." method="_on_right_button_down"]
+[connection signal="button_up" from="Controls/Panel/Right" to="." method="_on_move_button_up"]
+[connection signal="pressed" from="Controls/Panel/Right" to="." method="_on_right_pressed"]
+[connection signal="pressed" from="Controls/Panel/Jump" to="." method="_on_jump_pressed"]

@@ -11,6 +11,19 @@ script = ExtResource("1_root")
 
 [node name="Background" parent="." instance=ExtResource("3_background")]
 
+[node name="Hint" type="Label" parent="."]
+offset_left = 30.0
+offset_top = 30.0
+offset_right = 600.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_font_sizes/font_size = 24
+text = "Click all 4 garlic targets!"
+mouse_filter = 2
+
 [node name="Button_1" type="TextureButton" parent="."]
 position = Vector2(180, 180)
 size = Vector2(100, 100)
