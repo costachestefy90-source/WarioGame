@@ -1,0 +1,7 @@
+# Godot editor/import cache
+.godot/
+
+# Local HTML exports and packaged uploads
+index.*
+fresh.*
+*.zip
