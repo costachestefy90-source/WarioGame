@@ -1,3 +1,63 @@
 [gd_scene format=3 uid="uid://ckdvqwr751piv"]
 
-[node name="Node2D" type="Node2D" unique_id=743412890]
+[ext_resource type="Script" uid="uid://dasyv2sdxf386" path="res://timer_screen.gd" id="1_3mivm"]
+[ext_resource type="Texture2D" uid="uid://kaw1p35hbyoo" path="res://addons/vecteezy_vector-illustration-mountains-mysterious-landscape-of_8215950.svg" id="1_187gu"]
+[ext_resource type="Texture2D" uid="uid://bhcntd80q17e5" path="res://icon.svg" id="2_187gu"]
+
+[node name="LevelScene" type="Node2D" unique_id=743412890]
+script = ExtResource("1_3mivm")
+
+[node name="Unused" type="TextureRect" parent="." unique_id=638289066]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Background" type="TextureRect" parent="." unique_id=485556552]
+offset_right = 6000.0
+offset_bottom = 4000.0
+scale = Vector2(0.26695204, 0.22854456)
+texture = ExtResource("1_187gu")
+
+[node name="GarlicContainer" type="HBoxContainer" parent="." unique_id=1154661]
+offset_left = 450.0
+offset_top = 40.0
+offset_right = 978.0
+offset_bottom = 168.0
+
+[node name="Garlic" type="TextureRect" parent="GarlicContainer" unique_id=460636652]
+layout_mode = 2
+texture = ExtResource("2_187gu")
+
+[node name="Garlic2" type="TextureRect" parent="GarlicContainer" unique_id=518344902]
+layout_mode = 2
+texture = ExtResource("2_187gu")
+
+[node name="Garlic3" type="TextureRect" parent="GarlicContainer" unique_id=920222877]
+layout_mode = 2
+texture = ExtResource("2_187gu")
+
+[node name="Garlic4" type="TextureRect" parent="GarlicContainer" unique_id=1375849656]
+layout_mode = 2
+texture = ExtResource("2_187gu")
+
+[node name="Garlic5" type="TextureRect" parent="GarlicContainer" unique_id=1295757215]
+layout_mode = 2
+texture = ExtResource("2_187gu")
+
+[node name="Level" type="RichTextLabel" parent="." unique_id=1996742621]
+offset_left = 30.0
+offset_top = 20.0
+offset_right = 300.0
+offset_bottom = 80.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/normal_font_size = 42
+text = "Level #"
+metadata/_edit_use_anchors_ = true
+
+[node name="Timer" type="RichTextLabel" parent="." unique_id=1208723673]
+offset_left = 520.0
+offset_top = 20.0
+offset_right = 700.0
+offset_bottom = 80.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/normal_font_size = 42
+text = "0.0"

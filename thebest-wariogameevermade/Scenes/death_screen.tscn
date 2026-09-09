@@ -1,0 +1,42 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://background.tscn" id="1_background"]
+[ext_resource type="Script" path="res://end_screen.gd" id="2_script"]
+
+[node name="DeathScreen" type="Node2D"]
+script = ExtResource("2_script")
+won = false
+
+[node name="Background" parent="." instance=ExtResource("1_background")]
+
+[node name="Message" type="RichTextLabel" parent="."]
+offset_left = 300.0
+offset_top = 120.0
+offset_right = 1000.0
+offset_bottom = 240.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_font_sizes/normal_font_size = 80
+text = "GAME OVER"
+horizontal_alignment = 1
+
+[node name="Details" type="RichTextLabel" parent="."]
+offset_left = 300.0
+offset_top = 260.0
+offset_right = 1000.0
+offset_bottom = 330.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/normal_font_size = 28
+text = "The garlic got away..."
+horizontal_alignment = 1
+
+[node name="Restart" type="Button" parent="."]
+offset_left = 490.0
+offset_top = 390.0
+offset_right = 790.0
+offset_bottom = 460.0
+theme_override_font_sizes/font_size = 28
+text = "Try Again"
+
+[connection signal="pressed" from="Restart" to="." method="_on_restart_pressed"]

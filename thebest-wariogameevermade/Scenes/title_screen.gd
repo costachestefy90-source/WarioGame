@@ -1,19 +1,20 @@
 extends Node2D
 
-
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
+	var viewport_size := get_viewport_rect().size
+	$VBoxContainer.position = Vector2((viewport_size.x - 240.0) / 2.0, viewport_size.y * 0.52)
+	$VBoxContainer.size = Vector2(240.0, 190.0)
+	for button in $VBoxContainer.get_children():
+		button.custom_minimum_size = Vector2(240.0, 52.0)
 
 func _on_start_pressed() -> void:
+	Global.minigames_done = 0
+	Global.lives = 5
 	get_tree().change_scene_to_file("res://level_scene.tscn")
 
+func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("ui_accept"):
+		_on_start_pressed()
 
 func _on_quit_pressed() -> void:
 	get_tree().quit()

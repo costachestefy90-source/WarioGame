@@ -7,11 +7,13 @@ offset_top = 1.0
 offset_right = 6026.0933
 offset_bottom = 4001.0
 scale = Vector2(0.19161952, 0.1613587)
+mouse_filter = 2
 texture = ExtResource("1_oabld")
 
 [node name="Title" type="RichTextLabel" parent="." unique_id=576194894]
 clip_contents = false
 layout_mode = 0
+mouse_filter = 2
 offset_left = 1614.9941
 offset_top = 508.76715
 offset_right = 4664.9663

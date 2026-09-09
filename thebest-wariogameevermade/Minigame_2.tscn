@@ -1,0 +1,51 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://minigame_2.gd" id="1_root"]
+[ext_resource type="PackedScene" path="res://themed_timer.tscn" id="2_timer"]
+[ext_resource type="PackedScene" path="res://background.tscn" id="3_background"]
+[ext_resource type="Texture2D" path="res://icon.svg" id="4_garlic"]
+[ext_resource type="Script" path="res://button.gd" id="5_button"]
+
+[node name="Minigame_2" type="Node2D"]
+script = ExtResource("1_root")
+
+[node name="Background" parent="." instance=ExtResource("3_background")]
+
+[node name="Button_1" type="TextureButton" parent="."]
+position = Vector2(180, 180)
+size = Vector2(100, 100)
+custom_minimum_size = Vector2(100, 100)
+mouse_filter = 0
+texture_normal = ExtResource("4_garlic")
+script = ExtResource("5_button")
+
+[node name="Button_2" type="TextureButton" parent="."]
+position = Vector2(820, 160)
+size = Vector2(100, 100)
+custom_minimum_size = Vector2(100, 100)
+mouse_filter = 0
+texture_normal = ExtResource("4_garlic")
+script = ExtResource("5_button")
+
+[node name="Button_3" type="TextureButton" parent="."]
+position = Vector2(360, 430)
+size = Vector2(100, 100)
+custom_minimum_size = Vector2(100, 100)
+mouse_filter = 0
+texture_normal = ExtResource("4_garlic")
+script = ExtResource("5_button")
+
+[node name="Button_4" type="TextureButton" parent="."]
+position = Vector2(920, 450)
+size = Vector2(100, 100)
+custom_minimum_size = Vector2(100, 100)
+mouse_filter = 0
+texture_normal = ExtResource("4_garlic")
+script = ExtResource("5_button")
+
+[node name="ThemedTimer" parent="." instance=ExtResource("2_timer")]
+
+[connection signal="pressed" from="Button_1" to="Button_1" method="_on_pressed"]
+[connection signal="pressed" from="Button_2" to="Button_2" method="_on_pressed"]
+[connection signal="pressed" from="Button_3" to="Button_3" method="_on_pressed"]
+[connection signal="pressed" from="Button_4" to="Button_4" method="_on_pressed"]
