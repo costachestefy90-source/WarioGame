@@ -1,0 +1,54 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://minigame_3.gd" id="1_star"]
+[ext_resource type="PackedScene" path="res://background.tscn" id="2_background"]
+[ext_resource type="PackedScene" path="res://themed_timer.tscn" id="3_timer"]
+
+[node name="Minigame_3" type="Node2D"]
+script = ExtResource("1_star")
+
+[node name="Background" parent="." instance=ExtResource("2_background")]
+
+[node name="Hint" type="Label" parent="."]
+offset_left = 30.0
+offset_top = 35.0
+offset_right = 560.0
+offset_bottom = 75.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_font_sizes/font_size = 26
+text = "Level 3: Catch the moving stars!"
+mouse_filter = 2
+
+[node name="Status" type="Label" parent="."]
+offset_left = 30.0
+offset_top = 82.0
+offset_right = 530.0
+offset_bottom = 118.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_font_sizes/font_size = 22
+mouse_filter = 2
+
+[node name="Target" type="Button" parent="."]
+offset_left = 120.0
+offset_top = 170.0
+offset_right = 240.0
+offset_bottom = 290.0
+custom_minimum_size = Vector2(120, 120)
+theme_override_colors/font_color = Color(1, 0.86, 0.12, 1)
+theme_override_colors/font_hover_color = Color(1, 0.98, 0.55, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.08, 0.1, 0.18, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 72
+text = "★"
+focus_mode = 0
+
+[node name="ThemedTimer" parent="." instance=ExtResource("3_timer")]
+
+[connection signal="pressed" from="Target" to="." method="_on_target_pressed"]
