@@ -41,7 +41,7 @@ func _on_settings_pressed() -> void:
 	heading.add_theme_font_size_override("font_size", 48)
 	box.add_child(heading)
 	var instructions := Label.new()
-	instructions.text = "Keyboard: A/D or arrow keys to move, W/Space to jump.\nMouse: use the on-screen controls during the platformer.\nClick every garlic target in the second minigame."
+	instructions.text = "Keyboard: A/D or arrow keys to move; W/Space/Enter to jump.\nMouse: use the platformer controls, then click targets.\nSignal Summit: press or click the matching arrow."
 	instructions.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	instructions.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	instructions.add_theme_font_size_override("font_size", 22)
