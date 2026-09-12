@@ -10,37 +10,37 @@ extends Node2D
 var time := 5.0
 
 func _ready() -> void:
-    level.text = "Level " + str(Global.minigames_done + 1)
-    while time > 0.0:
-        timer.text = str(snapped(time, 0.1))
-        await get_tree().create_timer(0.1).timeout
-        time -= 0.1
+	level.text = "Level " + str(Global.minigames_done + 1)
+	while time > 0.0:
+		timer.text = str(snapped(time, 0.1))
+		await get_tree().create_timer(0.1).timeout
+		time -= 0.1
 
-    if Global.minigames_done < 3:
-        Global.minigames_done += 1
-        var next_scene := "res://minigame_1.tscn"
-        if Global.minigames_done == 2:
-            next_scene = "res://Minigame_2.tscn"
-        elif Global.minigames_done == 3:
-            next_scene = "res://Minigame_3.tscn"
-        get_tree().change_scene_to_file(next_scene)
+	if Global.minigames_done < 3:
+		Global.minigames_done += 1
+		var next_scene := "res://minigame_1.tscn"
+		if Global.minigames_done == 2:
+			next_scene = "res://Minigame_2.tscn"
+		elif Global.minigames_done == 3:
+			next_scene = "res://Minigame_3.tscn"
+		get_tree().change_scene_to_file(next_scene)
 
 func _process(_delta: float) -> void:
-    match Global.lives:
-        4:
-            garlic.hide()
-        3:
-            garlic.hide()
-            garlic_2.hide()
-        2:
-            garlic.hide()
-            garlic_2.hide()
-            garlic_3.hide()
-        1:
-            garlic.hide()
-            garlic_2.hide()
-            garlic_3.hide()
-            garlic_4.hide()
-        0:
-            garlic_container.hide()
+	match Global.lives:
+		4:
+			garlic.hide()
+		3:
+			garlic.hide()
+			garlic_2.hide()
+		2:
+			garlic.hide()
+			garlic_2.hide()
+			garlic_3.hide()
+		1:
+			garlic.hide()
+			garlic_2.hide()
+			garlic_3.hide()
+			garlic_4.hide()
+		0:
+			garlic_container.hide()
 		
