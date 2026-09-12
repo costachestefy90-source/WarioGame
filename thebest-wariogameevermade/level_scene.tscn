@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dasyv2sdxf386" path="res://timer_screen.gd" id="1_3mivm"]
 [ext_resource type="Texture2D" uid="uid://kaw1p35hbyoo" path="res://addons/vecteezy_vector-illustration-mountains-mysterious-landscape-of_8215950.svg" id="1_187gu"]
-[ext_resource type="Texture2D" uid="uid://bhcntd80q17e5" path="res://icon.svg" id="2_187gu"]
+[ext_resource type="Texture2D" path="res://assets/garlic-target.svg" id="2_187gu"]
 
 [node name="LevelScene" type="Node2D" unique_id=743412890]
 script = ExtResource("1_3mivm")

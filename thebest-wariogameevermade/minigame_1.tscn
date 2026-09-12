@@ -126,6 +126,19 @@ theme_override_font_sizes/font_size = 22
 text = "Collect all 3 garlic before time runs out!"
 mouse_filter = 2
 
+[node name="Status" type="Label" parent="Controls/Panel"]
+offset_left = 28.0
+offset_top = 140.0
+offset_right = 520.0
+offset_bottom = 178.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_font_sizes/font_size = 22
+text = "Garlic: 0 / 3    Lives: 5"
+mouse_filter = 2
+
 [node name="Left" type="Button" parent="Controls/Panel"]
 offset_left = 28.0
 offset_top = 526.0

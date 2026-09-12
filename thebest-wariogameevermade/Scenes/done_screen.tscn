@@ -1,6 +1,6 @@
 [gd_scene format=3]
 
-[ext_resource type="Texture2D" path="res://assets/win_screen.png" id="1_art"]
+[ext_resource type="Texture2D" path="res://assets/winner-screen.svg" id="1_art"]
 [ext_resource type="Script" path="res://end_screen.gd" id="2_script"]
 
 [node name="DoneScreen" type="Node2D"]

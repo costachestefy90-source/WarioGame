@@ -2,6 +2,7 @@ extends Node2D
 
 @onready var themed_timer: Node2D = $ThemedTimer
 @onready var player: CharacterBody2D = $Player
+@onready var status_label: Label = $Controls/Panel/Status
 var garlic_collected := 0
 var timer_end := false
 var finished := false
@@ -9,14 +10,19 @@ var finished := false
 func _ready() -> void:
 	for garlic in [$Garlic, $Garlic2, $Garlic3]:
 		garlic.garlic_collected.connect(_on_garlic_collected)
+	_update_status()
 	await themed_timer.Timer(10.0)
 	timer_end = true
 	_finish(false)
 
 func _on_garlic_collected() -> void:
 	garlic_collected += 1
+	_update_status()
 	if garlic_collected >= 3:
 		_finish(true)
+
+func _update_status() -> void:
+	status_label.text = "Garlic: %d / 3    Lives: %d" % [garlic_collected, Global.lives]
 
 func _on_left_button_down() -> void:
 	player.set_mobile_direction(-1.0)

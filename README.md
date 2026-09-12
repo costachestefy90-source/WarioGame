@@ -40,7 +40,7 @@ The new Signal Summit round uses a fixed directional pattern so the challenge is
 
 ## Assets and credits
 
-- The mountain background and the existing winner/death artwork are project-provided assets retained in the game.
+- The selected mountain background remains part of the game, while the active winner and death screens use original vector illustrations in `assets/winner-screen.svg` and `assets/death-screen.svg`.
 - The key art, garlic targets, and summit runner in `assets/game2-key-art.svg`, `assets/garlic-target.svg`, and `assets/player.svg` are original vector illustrations created for this project.
 - The Signal Summit interface uses original layout, color, and arrow artwork built in the Godot scene.
 - Built with [Godot](https://godotengine.org/).
@@ -49,8 +49,8 @@ The new Signal Summit round uses a fixed directional pattern so the challenge is
 
 - Godot project: yes.
 - Four input-responsive minigames: yes.
-- Original winner and death scenes: yes.
-- Self-made visual assets: key art, garlic targets, summit runner, and Signal Summit interface included.
+- Original winner and death scenes: yes — each has a separate custom illustration and replay path.
+- Self-made visual assets: key art, garlic targets, summit runner, winner/death art, and Signal Summit interface included.
 - README: this file includes a hero image, demo link, quick start, features, local run instructions, technical overview, controls, and credits.
 - Coding time: record and submit your real coding time; this README does not claim hours that were not worked.
 - AI use: this session provided implementation assistance, so do not submit it as zero-AI work. Review the code and disclose assistance honestly if the mission asks.

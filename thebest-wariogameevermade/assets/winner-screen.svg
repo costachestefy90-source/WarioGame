@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1152" height="648" viewBox="0 0 1152 648">
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#101b45"/>
+<stop offset="1" stop-color="#1d8e98"/>
+</linearGradient>
+<linearGradient id="peak" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#ffd45a"/>
+<stop offset="1" stop-color="#e76c65"/>
+</linearGradient>
+</defs>
+<rect width="1152" height="648" fill="url(#sky)"/>
+<circle cx="104" cy="102" r="4" fill="#fff4b8"/><circle cx="194" cy="172" r="3" fill="#fff4b8"/><circle cx="946" cy="96" r="4" fill="#fff4b8"/><circle cx="1030" cy="188" r="3" fill="#fff4b8"/><circle cx="842" cy="142" r="2.5" fill="#fff4b8"/>
+<path d="M0 510 180 312l136 129 136-168 168 190 145-170 190 217 107-94 90 94v138H0Z" fill="#26325d"/>
+<path d="M0 570 210 410l133 91 168-118 141 104 160-146 154 124 111-76 75 67v192H0Z" fill="#14213f"/>
+<path d="m438 492 138-194 148 194-75-54-73 28-67-35Z" fill="url(#peak)" stroke="#101a38" stroke-width="8" stroke-linejoin="round"/>
+<path d="M576 298v-102" stroke="#fff4b8" stroke-width="8" stroke-linecap="round"/>
+<path d="M580 198h86l-22 34h-64Z" fill="#ff6d72" stroke="#101a38" stroke-width="7" stroke-linejoin="round"/>
+<circle cx="576" cy="282" r="48" fill="#fff4b8" stroke="#101a38" stroke-width="8"/>
+<path d="m550 283 18 18 35-40" fill="none" stroke="#1c9a8d" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M505 390h142" stroke="#fff4b8" stroke-width="6" stroke-linecap="round" opacity=".85"/>
+<path d="m477 357 13-26 13 26 26 13-26 13-13 26-13-26-26-13Z" fill="#fff4b8" stroke="#101a38" stroke-width="5"/>
+<path d="m686 357 11-22 11 22 22 11-22 11-11 22-11-22-22-11Z" fill="#fff4b8" stroke="#101a38" stroke-width="5"/>
+<text x="576" y="105" fill="#fff4b8" font-family="sans-serif" font-size="56" font-weight="800" text-anchor="middle" letter-spacing="5">SUMMIT REACHED!</text>
+<text x="576" y="145" fill="#d8f7f0" font-family="sans-serif" font-size="20" font-weight="700" text-anchor="middle" letter-spacing="4">FOUR ROUNDS. ONE CHAMPION.</text>
+<text x="576" y="470" fill="#fff4b8" font-family="sans-serif" font-size="24" font-weight="800" text-anchor="middle" letter-spacing="6">SIGNAL SUMMIT</text>
+</svg>
