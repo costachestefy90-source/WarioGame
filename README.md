@@ -14,16 +14,12 @@ A fast four-round WarioWare-style challenge where every second counts on the cli
 2. Choose **Start Game**.
 3. Complete all four timed minigames before losing all five lives.
 
-For the local Godot version, open `thebest-wariogameevermade/project.godot` in Godot 4.7 or newer and press **Play**. No extra libraries or downloads are required.
-
 ## Features
 
-- A platformer round with a 1.7× jump boost, three garlic targets, and on-screen controls.
 - A timed garlic-clicking round with four targets.
 - A moving star-catching round that rewards quick mouse clicks.
 - A direction-signal round that accepts arrow keys or matching on-screen buttons.
 - A five-life system, countdown transitions, replay flow, original winner scene, and original death scene.
-- A responsive HTML5 export that runs directly in the browser.
 
 ## How it works
 
@@ -43,20 +39,8 @@ The new Signal Summit round uses a fixed directional pattern so the challenge is
 - The selected mountain background remains part of the game, while the active winner and death screens use original vector illustrations in `assets/winner-screen.svg` and `assets/death-screen.svg`.
 - The key art, garlic targets, and summit runner in `assets/game2-key-art.svg`, `assets/garlic-target.svg`, and `assets/player.svg` are original vector illustrations created for this project.
 - The Signal Summit interface uses original layout, color, and arrow artwork built in the Godot scene.
-- Built with [Godot](https://godotengine.org/).
-
-## Mission checklist
-
-- Godot project: yes.
-- Four input-responsive minigames: yes.
-- Original winner and death scenes: yes — each has a separate custom illustration and replay path.
-- Self-made visual assets: key art, garlic targets, summit runner, winner/death art, and Signal Summit interface included.
-- README: this file includes a hero image, demo link, quick start, features, local run instructions, technical overview, controls, and credits.
-- Coding time: record and submit your real coding time; this README does not claim hours that were not worked.
-- AI use: this session provided implementation assistance, so do not submit it as zero-AI work. Review the code and disclose assistance honestly if the mission asks.
 
 ## Links
 
 - [Play the browser demo](https://steff11.itch.io/the-best-wario-game-ever-made)
 - [GitHub repository](https://github.com/costachestefy90-source/WarioGame)
-- [Raw README URL](https://raw.githubusercontent.com/costachestefy90-source/WarioGame/main/README.md)
