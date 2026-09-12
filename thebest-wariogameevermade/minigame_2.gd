@@ -33,7 +33,7 @@ func _finish(success: bool) -> void:
 			get_tree().change_scene_to_file("res://level_scene.tscn")
 	elif Global.lives <= 0:
 		get_tree().change_scene_to_file("res://Scenes/death_screen.tscn")
-	elif Global.minigames_done >= 3:
+	elif Global.minigames_done >= 4:
 		get_tree().change_scene_to_file("res://Scenes/done_screen.tscn")
 	else:
 		get_tree().change_scene_to_file("res://level_scene.tscn")

@@ -16,13 +16,15 @@ func _ready() -> void:
 		await get_tree().create_timer(0.1).timeout
 		time -= 0.1
 
-	if Global.minigames_done < 3:
+	if Global.minigames_done < 4:
 		Global.minigames_done += 1
 		var next_scene := "res://minigame_1.tscn"
 		if Global.minigames_done == 2:
 			next_scene = "res://Minigame_2.tscn"
 		elif Global.minigames_done == 3:
 			next_scene = "res://Minigame_3.tscn"
+		elif Global.minigames_done == 4:
+			next_scene = "res://Minigame_4.tscn"
 		get_tree().change_scene_to_file(next_scene)
 
 func _process(_delta: float) -> void:

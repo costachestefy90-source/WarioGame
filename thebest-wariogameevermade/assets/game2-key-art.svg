@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1152 648" role="img" aria-labelledby="title desc">
+  <title id="title">The Best Wario Game Ever Made key art</title>
+  <desc id="desc">A custom geometric mountain, lightning bolt, stars, and four signal arrows.</desc>
+  <rect width="1152" height="648" fill="#0d1635"/>
+  <circle cx="934" cy="112" r="54" fill="#ffe45c"/>
+  <circle cx="934" cy="112" r="70" fill="none" stroke="#ffe45c" stroke-opacity=".25" stroke-width="8"/>
+  <path d="M0 470 192 270 342 416 520 188 724 414 894 240 1152 478V648H0Z" fill="#182e61"/>
+  <path d="M0 538 244 348 420 500 616 286 820 498 1010 336 1152 430V648H0Z" fill="#28548a"/>
+  <path d="m520 188 48 104h-43l42 90-112-122h48z" fill="#ff6f91" stroke="#0d1635" stroke-width="8" stroke-linejoin="round"/>
+  <g fill="none" stroke="#ffe45c" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M180 150v72m-36-36h72"/>
+    <path d="M760 90v56m-28-28h56"/>
+    <path d="M1050 260v64m-32-32h64"/>
+  </g>
+  <g fill="#0d1635" stroke="#5de0e9" stroke-width="7">
+    <circle cx="410" cy="548" r="34"/>
+    <circle cx="520" cy="548" r="34"/>
+    <circle cx="630" cy="548" r="34"/>
+    <circle cx="740" cy="548" r="34"/>
+  </g>
+  <g fill="#5de0e9" font-family="Arial, sans-serif" font-size="42" font-weight="700" text-anchor="middle">
+    <text x="410" y="563">↑</text><text x="520" y="563">→</text><text x="630" y="563">↓</text><text x="740" y="563">←</text>
+  </g>
+  <text x="576" y="90" fill="#ffffff" font-family="Arial, sans-serif" font-size="40" font-weight="700" text-anchor="middle" letter-spacing="4">WARIOWARE</text>
+  <text x="576" y="142" fill="#5de0e9" font-family="Arial, sans-serif" font-size="23" text-anchor="middle" letter-spacing="3">MOUNTAIN CHALLENGE</text>
+</svg>

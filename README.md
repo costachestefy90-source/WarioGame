@@ -1,35 +1,62 @@
 # The Best Wario Game Ever Made
 
-A small WarioWare-style Godot game built around a simple challenge: clear three quick minigames before time runs out. The game uses the selected mountain background, custom game flow, and the supplied original win and death artwork.
+A fast four-round WarioWare-style challenge where every second counts on the climb to the summit.
 
-## How to play
+![WarioWare Mountain Challenge key art](thebest-wariogameevermade/assets/game2-key-art.svg)
 
-1. Choose **Start Game** on the title screen.
-2. In the platformer minigame, collect all three garlic targets before the timer reaches zero.
-3. In the second minigame, click all four garlic targets before time runs out.
-4. In the star catcher minigame, click five moving stars before time runs out.
-5. Complete all three minigames to reach the win screen. Failed attempts cost a life; losing all five lives opens the death screen.
+## Try it
 
-### Controls
+**[Play the browser demo on itch.io](https://steff11.itch.io/the-best-wario-game-ever-made)**
 
-- Keyboard: **A/D** or the **left/right arrow keys** to move; **W**, **Space**, or **Enter** to jump/accept.
-- Mouse: use the on-screen **LEFT**, **RIGHT**, and **JUMP** buttons in the platformer, then click the garlic targets and moving stars directly.
-- The **Settings** screen in the game repeats the controls.
+## Quick start
 
-## Project requirements covered
+1. Open the demo link above.
+2. Choose **Start Game**.
+3. Complete all four timed minigames before losing all five lives.
 
-- Made in Godot.
-- Three playable minigames that respond to player input.
-- Original game flow with timers, lives, replay, a winner scene, and a death scene.
-- A README with controls and links.
-- The project includes the supplied win/death images and the selected background.
+For the local Godot version, open `thebest-wariogameevermade/project.godot` in Godot 4.7 or newer and press **Play**. No extra libraries or downloads are required.
+
+## Features
+
+- A platformer round with a 1.7× jump boost, three garlic targets, and on-screen controls.
+- A timed garlic-clicking round with four targets.
+- A moving star-catching round that rewards quick mouse clicks.
+- A direction-signal round that accepts arrow keys or matching on-screen buttons.
+- A five-life system, countdown transitions, replay flow, original winner scene, and original death scene.
+- A responsive HTML5 export that runs directly in the browser.
+
+## How it works
+
+Each round is a separate Godot scene with a small script that owns its timer, input handling, progress, and success/failure result. The transition scene keeps the four-round sequence readable: it updates the level counter, shows the remaining lives, and launches the next scene. A failed round costs one life and retries that round after the transition; completing round four opens the winner scene.
+
+The new Signal Summit round uses a fixed directional pattern so the challenge is predictable and testable. The same action functions are called by both keyboard input and the four mouse buttons, keeping the two control paths consistent.
+
+## Controls
+
+- Platformer: **A/D** or **Left/Right** to move; **W**, **Space**, **Enter**, or **JUMP** to jump.
+- Other rounds: click the targets directly.
+- Signal Summit: press **Up**, **Right**, **Down**, or **Left**, or click the matching button.
+- Open **Settings** from the title screen for the in-game reminder.
+
+## Assets and credits
+
+- The mountain background and the existing winner/death artwork are project-provided assets retained in the game.
+- The key art in `assets/game2-key-art.svg` is an original geometric illustration created for this project.
+- The Signal Summit interface uses original layout, color, and arrow artwork built in the Godot scene.
+- Built with [Godot](https://godotengine.org/).
+
+## Mission checklist
+
+- Godot project: yes.
+- Four input-responsive minigames: yes.
+- Original winner and death scenes: yes.
+- Self-made visual assets: key art and Signal Summit interface included.
+- README: this file includes a hero image, demo link, quick start, features, local run instructions, technical overview, controls, and credits.
+- Coding time: record and submit your real coding time; this README does not claim hours that were not worked.
+- AI use: this session provided implementation assistance, so do not submit it as zero-AI work. Review the code and disclose assistance honestly if the mission asks.
 
 ## Links
 
 - [Play the browser demo](https://steff11.itch.io/the-best-wario-game-ever-made)
 - [GitHub repository](https://github.com/costachestefy90-source/WarioGame)
 - [Raw README URL](https://raw.githubusercontent.com/costachestefy90-source/WarioGame/main/README.md)
-
-## Development status
-
-The Godot source is kept in the repository, and the browser build is published on itch.io. The current build has been checked through mouse-only win and loss flows, restart buttons, title/settings navigation, and browser runtime logs.
