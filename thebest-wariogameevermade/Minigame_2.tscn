@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://minigame_2.gd" id="1_root"]
 [ext_resource type="PackedScene" path="res://themed_timer.tscn" id="2_timer"]
 [ext_resource type="PackedScene" path="res://background.tscn" id="3_background"]
-[ext_resource type="Texture2D" path="res://icon.svg" id="4_garlic"]
+[ext_resource type="Texture2D" path="res://assets/garlic-target.svg" id="4_garlic"]
 [ext_resource type="Script" path="res://button.gd" id="5_button"]
 
 [node name="Minigame_2" type="Node2D"]

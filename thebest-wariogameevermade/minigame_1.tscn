@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dm12clsv4g5xl" path="res://minigame_1.gd" id="1_0hvi2"]
 [ext_resource type="PackedScene" uid="uid://cqm2errc224ba" path="res://Player.tscn" id="1_gi7k6"]
-[ext_resource type="Texture2D" uid="uid://bhcntd80q17e5" path="res://icon.svg" id="2_0hvi2"]
+[ext_resource type="Texture2D" path="res://assets/garlic-target.svg" id="2_0hvi2"]
 [ext_resource type="PackedScene" uid="uid://e04uile2a0c3" path="res://background.tscn" id="2_r6gmb"]
 [ext_resource type="Script" path="res://garlic.gd" id="3_garlic"]
 [ext_resource type="PackedScene" path="res://themed_timer.tscn" id="4_timer"]
